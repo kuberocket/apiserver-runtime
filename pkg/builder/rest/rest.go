@@ -78,6 +78,7 @@ func newStore(
 		NewListFunc:              list,
 		PredicateFunc:            s.Match,
 		DefaultQualifiedResource: gvr.GroupResource(),
+		SingularQualifiedResource: gvr.GroupResource(),
 		TableConvertor:           s,
 		CreateStrategy:           s,
 		UpdateStrategy:           s,
